@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+# Webflow Designer Extension + React + TypeScript + Vite + TailwindCSS Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get started building Webflow Designer Extensions using React, TypeScript, Vite, and TailwindCSS. It combines the power of modern web development tools with Webflow's Designer Extension capabilities.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- ⚛️ [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- 🔷 [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
+- 🎨 [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
+- 🔌 [Webflow Designer Extension](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Build powerful tools directly in the Webflow Designer
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Before you begin, ensure you have:
+- Node.js (v18 or higher)
+- npm or yarn
+- A Webflow account with Designer Extension development access
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+1. Clone this repository:
+```bash
+git clone [repository-url]
+cd wf-ext-vite-react-tailwind-starter
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+This will generate a `bundle.zip` file that you can upload to Webflow.
+
+## Important Documentation
+
+- [Getting Started with Designer Extensions](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Learn how to set up and create your first Designer Extension
+- [Design Guidelines](https://developers.webflow.com/designer/docs/design-guidelines) - Best practices for designing Webflow Apps
+- [Publishing your Designer Extension](https://developers.webflow.com/designer/docs/publishing-your-app) - Guide to publishing your extension
+
+## Project Structure
+
+```
+├── src/               # Source files
+├── public/           # Static assets
+├── webflow.config.js # Webflow extension configuration
+├── vite.config.ts    # Vite configuration
+└── tailwind.config.js # TailwindCSS configuration
+```
+
+## Development Notes
+
+- Hot Module Replacement (HMR) is enabled by default
+- TypeScript type checking is enforced
+- ESLint is configured for code quality
+- TailwindCSS is set up with recommended configurations
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[MIT](LICENSE)
