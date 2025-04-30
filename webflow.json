@@ -1,6 +1,6 @@
 {
   "name": "wf-ext-vite-react-starter",
-  "publicDir": "public",
+  "publicDir": "dist",
   "size": "default",
   "apiVersion": "2"
 }

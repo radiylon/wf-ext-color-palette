@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite && concurrently \"webflow extension serve\"",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && webflow extension bundle",
     "lint": "eslint .",
     "preview": "vite preview"
   },
