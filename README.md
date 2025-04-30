@@ -11,6 +11,7 @@ This template provides a minimal setup to get started building Webflow Designer 
 - 🔷 [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
 - 🎨 [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
 - 🔌 [Webflow Designer Extension](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Build powerful tools directly in the Webflow Designer
+- 🔥 [Hot Reloading](https://www.npmjs.com/package/@xatom/wf-app-hot-reload) - Seamless hot reloading for Webflow applications during development
 
 ## Prerequisites
 
