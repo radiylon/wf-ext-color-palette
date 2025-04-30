@@ -61,10 +61,8 @@ This will generate a `bundle.zip` file that you can upload to Webflow.
 
 ## Development Notes
 
-- Hot Module Replacement (HMR) is enabled by default
-- TypeScript type checking is enforced
-- ESLint is configured for code quality
-- TailwindCSS is set up with recommended configurations
+- Utilizes Vite (can utilize Vite's plugin ecosystem)
+- Hot Reloading provided by [@Xatom's wf-app-hot-reload package](https://www.npmjs.com/package/@xatom/wf-app-hot-reload)
 
 ## Contributing
 
