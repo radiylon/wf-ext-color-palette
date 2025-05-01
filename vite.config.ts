@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(), 
     tailwindcss(),
-    wfHotReload()
+    wfHotReload(),
   ],
   server: {
     port: 1337

@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     void (async () => {
-      await webflow.setExtensionSize('large');
+      await webflow.setExtensionSize({ width: 800, height: 1000 });
     })();
   }, []);
   
