@@ -17,10 +17,10 @@ function App() {
   }, []);
 
   return (
-    <div className='text-white flex flex-col items-center w-full p-4'>
-      <h1 className='text-4xl font-bold mb-6'>{siteInfo?.siteName}</h1>
-      <div className='max-w-2xl w-full text-left'>
-        <pre className="whitespace-pre-wrap">{JSON.stringify(siteInfo, null, 2)}</pre>
+    <div className='bg-gray-800 text-white flex flex-col items-center w-full p-4 min-h-screen'>
+      <h1 className='text-4xl font-bold mb-6 text-blue-400'>{siteInfo?.siteName}</h1>
+      <div className='max-w-2xl w-full text-left bg-gray-900 p-6 rounded-lg'>
+        <pre className="whitespace-pre-wrap text-gray-200">{JSON.stringify(siteInfo, null, 2)}</pre>
       </div>
     </div>
   )
