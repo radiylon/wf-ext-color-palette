@@ -59,7 +59,7 @@ function App() {
       const collectionName = `${shortDesc}${shortDesc ? ' - ' : ''}${timestamp}`;
 
       // Create the collection
-      let collection = await webflow.createVariableCollection(collectionName);
+      const collection = await webflow.createVariableCollection(collectionName);
 
       // Create color variables for each color in the palette
       for (const color of palette) {
