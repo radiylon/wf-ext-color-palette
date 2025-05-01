@@ -2,7 +2,7 @@
 
 This template provides a minimal setup to get started building Webflow Designer Extensions using TypeScript, Vite, React, and TailwindCSS. It combines the power of modern web development tools with Webflow's Designer Extension capabilities.
 
-<img width="873" alt="Screenshot 2025-04-30 at 3 16 44 PM" src="https://github.com/user-attachments/assets/3c166681-1309-4674-9226-e625f279e9af" />
+<img width="842" alt="Screenshot 2025-04-30 at 5 04 48 PM" src="https://github.com/user-attachments/assets/9713f6f2-35bc-4720-a675-a5747c95a37e" />
 
 ## Features
 
