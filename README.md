@@ -1,17 +1,24 @@
-# Webflow Designer Extension + React + TypeScript + Vite + TailwindCSS Starter
+# Webflow Designer Extension - Rad Color Palette Generator
 
-This template provides a minimal setup to get started building Webflow Designer Extensions using TypeScript, Vite, React, and TailwindCSS. It combines the power of modern web development tools with Webflow's Designer Extension capabilities.
-
-<img width="873" alt="Screenshot 2025-04-30 at 3 16 44 PM" src="https://github.com/user-attachments/assets/3c166681-1309-4674-9226-e625f279e9af" />
+A basic Webflow Designer Extension that generates beautiful color palettes using AI. Simply describe the palette you want, and the extension will create a harmonious set of colors that you can save directly to your Webflow project as color variables and collections.
 
 ## Features
 
-- ⚡️ [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
-- ⚛️ [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- 🔷 [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
-- 🎨 [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework
-- 🔌 [Webflow Designer Extension](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Build powerful tools directly in the Webflow Designer
-- 🔥 [Hot Reloading](https://www.npmjs.com/package/@xatom/wf-app-hot-reload) - Seamless hot reloading for Webflow applications during development
+- 🎨 AI-Powered Color Generation - Generate unique color palettes from natural language descriptions
+- 💾 Webflow Integration - Save palettes directly as Webflow color variables
+- 📚 Collection Support - Store your palettes in Webflow collections for future reference
+- ⚡️ Real-time Preview - See your generated colors instantly with names and hex codes
+- 🔄 Multiple Generations - Keep generating until you find the perfect palette
+
+## Tech Stack
+
+- ⚛️ [React](https://reactjs.org/) - For building the user interface
+- 🔷 [TypeScript](https://www.typescriptlang.org/) - Type-safe development
+- 🎨 [TailwindCSS](https://tailwindcss.com/) - Utility-first styling
+- 🤖 [OpenAI API](https://openai.com/api/) - AI-powered color generation
+- 🔌 [Webflow Designer Extension API](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Deep Webflow integration
+- ⚡️ [Vite](https://vitejs.dev/) - Next-gen frontend tooling
+- 🔥 [Hot Reloading](https://www.npmjs.com/package/@xatom/wf-app-hot-reload) - Seamless development experience
 
 ## Prerequisites
 
@@ -19,13 +26,14 @@ Before you begin, ensure you have:
 - Node.js (v18 or higher)
 - npm or yarn
 - A Webflow account with Designer Extension development access
+- An OpenAI API key
 
 ## Getting Started
 
 1. Clone this repository:
 ```bash
 git clone [repository-url]
-cd wf-ext-vite-react-tailwind-starter
+cd wf-ext-color-palette
 ```
 
 2. Install dependencies:
@@ -42,28 +50,38 @@ npm run dev
 ```bash
 npm run build
 ```
-This will generate a `bundle.zip` file that you can upload to Webflow.
 
-## Important Documentation
+## Usage
 
-- [Getting Started with Designer Extensions](https://developers.webflow.com/designer/docs/getting-started-designer-extensions) - Learn how to set up and create your first Designer Extension
-- [Design Guidelines](https://developers.webflow.com/designer/docs/design-guidelines) - Best practices for designing Webflow Apps
-- [Publishing your Designer Extension](https://developers.webflow.com/designer/docs/publishing-your-app) - Guide to publishing your extension
+1. Install the extension in your Webflow project
+2. Enter your OpenAI API key (this is stored only in your browser session)
+3. Describe the color palette you want (e.g., "A warm and energetic palette inspired by sunset")
+4. Click "Generate Palette" to create your colors
+5. Preview the generated colors with their names and hex codes
+6. Click "Save to Webflow" to store the palette as variables and in your collections
+7. Generate new palettes until you find the perfect one
 
 ## Project Structure
 
 ```
-├── src/               # Source files
+├── src/
+│   ├── components/     # React components
+│   ├── hooks/         # Custom hooks including OpenAI integration
+│   ├── types/         # TypeScript type definitions
+│   └── App.tsx        # Main application component
 ├── public/           # Static assets
 ├── webflow.config.js # Webflow extension configuration
 ├── vite.config.ts    # Vite configuration
 └── tailwind.config.js # TailwindCSS configuration
 ```
 
-## Development Notes
+## Development
 
-- Utilizes Vite (can utilize Vite's plugin ecosystem)
-- Hot Reloading provided by [@Xatom's wf-app-hot-reload package](https://www.npmjs.com/package/@xatom/wf-app-hot-reload)
+- Uses Vite for fast development and building
+- Hot reloading enabled for rapid iteration
+- TailwindCSS for styling
+- OpenAI API for color generation
+- Webflow Designer Extension API for deep integration
 
 ## Contributing
 

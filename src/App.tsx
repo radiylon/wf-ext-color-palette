@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div className="p-4 flex flex-col items-center max-w-2xl mx-auto bg-gray-900 text-white min-h-screen">
-      <h1 className="text-3xl font-bold mb-4 text-blue-400">Color Palette Generator</h1>
+      <h1 className="text-3xl font-bold mb-4 text-blue-400">Rad Color Palette Generator</h1>
       <p className="text-gray-300 mb-8 text-center">Describe your desired color palette and we'll generate it using AI. Save the palette to use it in your Webflow project.</p>
       
       <div className="w-full mb-6">
