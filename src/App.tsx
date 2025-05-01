@@ -49,9 +49,25 @@ function App() {
     if (!palette.length) return;
 
     try {
-      // TODO: Implement saving to Webflow
-      console.log('COLOR PALETTE', palette);
-      await webflow.notify({ type: "Success", message: "Palette saved to Webflow!" });
+      // Create a unique collection name based on description and timestamp
+      const timestamp = new Date().toLocaleDateString('en-US', { 
+        month: 'short', 
+        day: 'numeric',
+        year: 'numeric'
+      });
+      const shortDesc = description.slice(0, 30).trim(); // Take first 30 chars
+      const collectionName = `${shortDesc}${shortDesc ? ' - ' : ''}${timestamp}`;
+
+      // Create the collection
+      let collection = await webflow.createVariableCollection(collectionName);
+
+      // Create color variables for each color in the palette
+      for (const color of palette) {
+        const variableName = color.name.toLowerCase().replace(/\s+/g, '-');
+        await collection.createColorVariable(variableName, color.hexcode);
+      }
+
+      await webflow.notify({ type: "Success", message: "Palette saved to Webflow variables!" });
     } catch {
       await webflow.notify({ 
         type: "Error", 
