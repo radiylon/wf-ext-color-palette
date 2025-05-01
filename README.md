@@ -2,6 +2,11 @@
 
 A basic Webflow Designer Extension that generates beautiful color palettes using AI. Simply describe the palette you want, and the extension will create a harmonious set of colors that you can save directly to your Webflow project as color variables and collections.
 
+<img width="672" alt="Screenshot 2025-04-30 at 6 51 54 PM" src="https://github.com/user-attachments/assets/55cee2bb-5079-408f-9b34-5580863f4468" />
+
+<img width="344" alt="Screenshot 2025-04-30 at 6 52 30 PM" src="https://github.com/user-attachments/assets/28fbebdf-544e-4cbb-842d-b28fc5a9d5f2" />
+
+
 ## Features
 
 - 🎨 AI-Powered Color Generation - Generate unique color palettes from natural language descriptions
