@@ -16,6 +16,11 @@ function App() {
     })();
   }, []);
   
+  const resetPalette = () => {
+    setPalette([]);
+    setDescription("");
+  }
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const text = e.target.value;
     if (text.length <= MAX_CHARS) {
@@ -141,12 +146,20 @@ function App() {
         </button>
 
         {palette.length > 0 && (
-          <button 
-            onClick={handleSave}
-            className="flex-1 py-3 px-4 rounded font-medium text-white bg-green-500 hover:bg-green-400 shadow-lg hover:shadow-green-500/50 transition-all"
-          >
-            Save to Webflow
-          </button>
+          <>
+            <button 
+              onClick={handleSave}
+              className="flex-1 py-3 px-4 rounded font-medium text-white bg-green-500 hover:bg-green-400 shadow-lg hover:shadow-green-500/50 transition-all"
+            >
+              Save to Webflow
+            </button>
+            <button 
+              onClick={resetPalette}
+              className="flex-1 py-3 px-4 rounded font-medium text-white bg-green-500 hover:bg-green-400 shadow-lg hover:shadow-green-500/50 transition-all"
+            >
+              Reset
+            </button>
+          </>
         )}
       </div>
     </div>
