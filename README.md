@@ -1,4 +1,4 @@
-# Webflow Designer Extension - Rad Color Palette Generator
+# Webflow Designer Palette Generator
 
 A Webflow Designer Extension that generates color palettes using AI. Describe the palette you want, and save it directly to your Webflow project as color variables.
 
